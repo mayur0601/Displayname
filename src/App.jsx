@@ -42,6 +42,7 @@ export default function App() {
   return (
     <main>
       <h1>Full Name Display</h1>
+      <form>
       <label>First Name:</label>
       <input type="text" id="fname" name="fname" ref={name} value={name.current.value} required/>
       <br />
@@ -52,6 +53,7 @@ export default function App() {
         Submit
       </button>
       <br />
+      </form>
       {displayName && <p>{fullname}</p>}
     </main>
   );
