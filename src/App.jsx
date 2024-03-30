@@ -43,10 +43,10 @@ export default function App() {
     <main>
       <h1>Full Name Display</h1>
       <label>First Name:</label>
-      <input type="text" id="fname" name="fname" ref={name} />
+      <input type="text" id="fname" name="fname" ref={name} value={name.current.value} required/>
       <br />
       <label>Last Name:</label>
-      <input type="text" id="fname" name="fname" ref={lastName} required />
+      <input type="text" id="fname" name="lname" ref={lastName} value={lastName.current.value} required />
       <br />
       <button type="submit" onClick={handleFormSubmit}>
         Submit
