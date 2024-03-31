@@ -55,7 +55,7 @@ export default function App() {
       </button>
       <br />
       </form>
-      {displayName && <p>{fullname}</p>}
+      <p>{displayName && {fullname}}</p>
     </main>
   );
 }
