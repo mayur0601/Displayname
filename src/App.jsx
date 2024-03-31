@@ -52,7 +52,7 @@ export default function App() {
           Submit
         </button>
         <br />
-        {displayName ? <p>{fullname}</p> : <p></p>}
+        {displayName && <p>{fullname}</p>}
       </form>
     </main>
   );
