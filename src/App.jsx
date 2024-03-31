@@ -28,7 +28,8 @@ export default function App() {
     return true;
   };
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
     setDisplayName(true);
     let nameT = name.current.value;
     let lastNameT = lastName.current.value;
