@@ -52,8 +52,8 @@ export default function App() {
           Submit
         </button>
         <br />
-        {displayName && <p>{fullname}</p>}
       </form>
+      {displayName && <p>{fullname}</p>}
     </main>
   );
 }
