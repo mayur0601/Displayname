@@ -17,10 +17,10 @@ export default function App() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setDisplayName(true);
     if (!validate(name, lastName)) {
       return;
     }
+    setDisplayName(true);
     setFullname(`Full Name: ${name} ${lastName}`);
   };
 
