@@ -53,7 +53,7 @@ export default function App() {
         </button>
         <br />
       </form>
-      {displayName && <p>{fullname}</p>}
+      {displayName ? <p>{fullname}</p> : <p>""</p>}
     </main>
   );
 }
